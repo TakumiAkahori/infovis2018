@@ -20,7 +20,7 @@
 
     var value = output.value;// 初期位置
 
-    var width = input.clientWidth / 2;
+    var width = input.clientWidth / 20;
 
 
 
