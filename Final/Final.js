@@ -1,6 +1,6 @@
 /**
 
- * Created by kagawa on 2017/06/14.
+ * Created by Akahori on 2018/06/14.
 
  */
 
@@ -28,17 +28,17 @@ function main() {
 
 
 
-    var fov = 45;
+    var fov = 50;
 
     var aspect = width / height;
 
     var near = 1;
 
-    var far = 1000;
+    var far = 100;
 
     var camera = new THREE.PerspectiveCamera( fov, aspect, near, far );
 
-    camera.position.set( 0, 0, 5 );
+    camera.position.set( 0, 0, 6 );
 
     scene.add( camera );
 
@@ -46,7 +46,7 @@ function main() {
 
     var light = new THREE.PointLight();
 
-    light.position.set( 5, 5, 5 );
+    light.position.set( 10, 1, 1 );
 
     scene.add( light );
 
@@ -166,9 +166,9 @@ function main() {
 
         'layout':'horizontal',
 
-        'position': { 'x': 0.6, 'y': -1.1, 'z': 2 },
+        'position': { 'x': -0.7, 'y': 1.5, 'z': 2 },
 
-        'dimensions': { 'width': 0.15, 'height': 1.2 }
+        'dimensions': { 'width': 0.35, 'height': 2.3 }
 
     } ) );
 
@@ -256,9 +256,9 @@ function main() {
 
         requestAnimationFrame( loop );
 
-        cube.rotation.x += 0.01;
+        cube.rotation.x += 0.03;
 
-        cube.rotation.y += 0.01;
+        cube.rotation.y += 0.03;
 
         renderer.render( scene, camera );
 
